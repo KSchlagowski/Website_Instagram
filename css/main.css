@@ -7,8 +7,8 @@
 }
 
 :root {
-    --glowny-kolor-tla: brown;
-    --basic-widtht: 270px;
+    --basic-width: 270px;
+    --responsive-width: 345px;
 }
 
 /* element {
@@ -51,7 +51,7 @@ body {
 .forms {
     display: flex;
     flex-direction: column;
-    width: var(--basic-widtht);
+    width: var(--basic-width);
     height: 38px;
     height: 100px;
 }
@@ -69,7 +69,7 @@ body {
     appearance: none;
     -webkit-appearance: none;
     cursor: pointer;
-    width: var(--basic-widtht);
+    width: var(--basic-width);
     height: 30px;
     margin-top: 10px;
     margin-bottom: 7px;
@@ -101,7 +101,7 @@ body {
 }
 
 .facebook-login {
-    width: var(--basic-widtht);
+    width: var(--basic-width);
     height: 30px;
     background-color: inherit;
     border: none;
@@ -162,7 +162,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: var(--basic-widtht);
+    width: var(--basic-width);
 }
 
 .get-the-app-text {
@@ -249,3 +249,30 @@ select::-ms-expand {
 
 
 
+@media only screen and (min-width: 450px) {
+    .right-first-parent {
+        width: var(--responsive-width);
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        padding-bottom:25px;
+        background-color: white;
+        border: 1px solid rgba(128, 128, 128, 0.274);
+    }
+
+    .right-second {
+        background-color: white;
+        border: 1px solid rgba(128, 128, 128, 0.274);
+        height: 60px;
+        width: var(--responsive-width);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width: 875px) {
+    
+}
