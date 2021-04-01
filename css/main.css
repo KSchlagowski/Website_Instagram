@@ -21,6 +21,12 @@ body {
   background-color: rgba(240, 240, 240, 0.205);
 }
 
+ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: inherit;
+}
+
 .main-right-side {
     display: flex;
     align-items: center;
@@ -129,7 +135,6 @@ body {
     margin-top: 10px;
     text-align: center;
     font-size: 12px;
-    font-weight: 50;
 }
 
 .forgot-password a {
@@ -151,11 +156,6 @@ body {
     text-transform: none;
     color: rgb(49, 172, 255);
     font-weight: 600;
-}
-
-.right-third {
-    
-
 }
 
 .get-the-app {
@@ -200,30 +200,46 @@ footer {
     color: gray;
 }
 
+.upper-footer {
+    margin-top: 35px;
+}
+
 .upper-footer > ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    
 }
 
 .upper-footer > ul > li {
-    padding: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 4px;
 }
 
 .middle-footer > ul {
     margin-top: 5px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.middle-footer > ul > li {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
 }
 
 .lower-footer {
     margin-top: 15px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
-
+.lower-footer > ul > li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 .custom-select {
     display: flex;
@@ -247,9 +263,13 @@ select::-ms-expand {
     display: none;
 } 
 
-
+.hide-mobile {
+    width: 0px;
+    height: 0px;
+}
 
 @media only screen and (min-width: 450px) {
+
     .right-first-parent {
         width: var(--responsive-width);
         display: flex;
@@ -271,8 +291,49 @@ select::-ms-expand {
         margin: 0;
         margin-top: 10px;
     }
+
+    .hide-mobile {
+        width: 0px;
+        height: 0px;
+    }
+
+    .forms > input {
+        background-color: rgba(240, 240, 240, 0.205);
+    }
+
+    .footer-content {
+        margin-top: 30px;
+    }
 }
 
 @media only screen and (min-width: 875px) {
+
+    section {
+        margin-top: 20px;
+        display: flex;
+    }
+
+    .main-left-side {
+        margin-top: 15px;
+    }
+
+    .footer-content {
+        margin-top: 40px;
+        align-items: center;
+        padding-bottom: 30px;
+    }
     
+    .middle-footer > ul > li {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .footer-content {
+        margin-top: 20px;
+    }
+
+    .hide-mobile {
+        width: initial;
+        height: initial;
+    }
 }
