@@ -18,18 +18,23 @@
 body {
   margin: 0;
   font-family: "Open Sans";
+  background-color: rgba(240, 240, 240, 0.205);
 }
-
-
 
 .main-right-side {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; 
+}
+
+.right-first-parent {
+    width: 70%;
+    display: flex;
+    justify-content: center;
 }
 
 .right-first {
-    
+    text-align: center;
 }
 
 .instagram-logo {
@@ -57,6 +62,7 @@ body {
     padding: 10px 7px 10px 7px;
     border: 1px solid;
     border-color: rgb(212, 212, 212);
+    background-color: inherit;
 }
 
 .login {
@@ -72,6 +78,7 @@ body {
     border-radius: 5px;
     color: white;
     font-size: 14px;
+    font-weight: 950;
 }
 
 .or-line {
@@ -82,6 +89,7 @@ body {
 .or {
     color: gray;
     font-size: 12px;
+    font-weight: 950;
 }
 
 .line {
@@ -114,20 +122,20 @@ body {
 .facebook-login > span {
     padding-left: 10px;
     font-weight: 600;
-    color: rgba(0, 0, 139, 0.596);
+    color: rgb(0, 0, 139);
 }
 
 .forgot-password {
     margin-top: 10px;
     text-align: center;
     font-size: 12px;
-    
+    font-weight: 50;
 }
 
 .forgot-password a {
     text-decoration: none;
     font-weight: 600;
-    color: rgba(0, 0, 139, 0.596);
+    color: rgb(0, 0, 139);
 }
 
 .right-second {
@@ -136,6 +144,13 @@ body {
     margin-top: 45px;
     margin-bottom: 30px;
     font-size: 14px;
+}
+
+.right-second a {
+    text-decoration: none;
+    text-transform: none;
+    color: rgb(49, 172, 255);
+    font-weight: 600;
 }
 
 .right-third {
@@ -208,33 +223,29 @@ footer {
     justify-content: space-around;
 }
 
-.languages-div {
-    position: relative;
+
+
+.custom-select {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 .languages {
-    display: block;
     border: none;
     color: inherit;
-    background-color: white;
+    background-color: inherit;
 }
 
-
-
-/* arrow */
-.languages:after {
-    justify-self: end;
-    position: absolute;
-    content: "";
-    top: 14px;
-    right: 10px;
-    width: 0;
-    background-color: white;
-    height: 0;
-    border: 6px solid transparent;
-    /* border-color: #fff transparent transparent transparent; */
+select{
+    -moz-appearance:none;  
+    -webkit-appearance: none;  
+    appearance:none;
 }
 
-.languages::-ms-expand {
+select::-ms-expand {
     display: none;
-  }
+} 
+
+
+
