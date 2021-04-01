@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans";
+}
+
+.main-right-side {
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-logo img {
+    width: 175px;
+    height: 100px;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    height: 38px;
+}
+
+form {
+    height: 100px;
+}
+
+form input {
+    margin-top: 10px;
+    padding: 5px 1px 5px 1px;
+}
+
+.login {
+    width: 270px;
+    height: 30px;
+    margin-bottom: 7px;
+    background-color: blue;
+    color: white;
+}
+
+.or-line {
+    display: flex;
+    align-items: center;
+}
+
+.or {
+    color: gray;
+    font-size: 12px;
+}
+
+.line {
+    border: 1px solid #000; 
+    width: 20%; 
+    margin: auto; 
+    margin-top: 5%; 
+    margin-bottom: 5%; 
+}
